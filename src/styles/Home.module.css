@@ -10,7 +10,7 @@
 }
 
 .filmsect {
-    background-image: url("/public/icelandfinal-35.jpg");
+    background-image: url("/icelandfinal-35.jpg");
     background-size: 100vw;
     filter: grayscale(100%);
     transition: all 500ms ease;
@@ -28,7 +28,7 @@
 }
 
 .othersect {
-    background-image: url("/public/icelandfinal-4.jpg");
+    background-image: url("/icelandfinal-4.jpg");
     background-size: 100vw;
     filter: grayscale(100%);
     

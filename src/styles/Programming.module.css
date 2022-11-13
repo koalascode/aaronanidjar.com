@@ -1,0 +1,44 @@
+.container {
+    margin-top: 2rem;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.sideimage {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.maintext {
+    
+}
+
+.mainheader {
+    font-family: "Inter";
+    cursor: pointer;
+}
+
+.mainheader:hover {
+    text-decoration: underline;
+}
+
+.maindescription {
+    max-width: 50ch;    
+    font-family: "Inter";
+    font-weight: 300;
+}
+
+@media (max-width: 540px) {
+    .sideimage {
+        width: 90%;
+    }
+    .maintext {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import styles from '../styles/Programming.module.css'
+---
+
+<Layout>
+    <div class={styles.container}>
+        <div class={styles.project}>
+            <div class={styles.maintext}>
+                <a class="nolink" href="https://betterbitcoinbureau.vercel.app/">
+                    <h2 class={styles.mainheader}>Better Bitcoin Bureau</h2>
+                </a>
+                <p class={styles.maindescription}>The Better Bitcoin Bureau is a review site that I built with NextJS, NodeJS, and MongoDB. It is a review site for crypto wallets to try and prevent scams.</p>
+            </div>
+            <img class={styles.sideimage} src="/betterbitcoinbureau2.png"/>
+        </div>
+        <div class={styles.project}>
+            <video class={styles.sideimage} src="/cleanwestchester.mov" autoplay loop/>
+            <div class={styles.maintext}>
+                <a class="nolink" href="https://www.cleanwestchester.org/">
+                    <h2 class={styles.mainheader}>Clean Westchester</h2>
+                </a>
+                <p class={styles.maindescription}>Clean Westchester is an environmental organization that I cofounded and built the web presence for. It was built with NextJS, ThreeJS, and Notion as a CMS for our blog.</p>
+            </div>
+        </div>
+        <div class={styles.project}>
+            <div class={styles.maintext}>
+                <a class="nolink" href="https://www.scarsdalelifesciences.org/">
+                    <h2 class={styles.mainheader}>Scarsdale Life Sciences Society</h2>
+                </a>
+                <p class={styles.maindescription}>The Scarsdale Life Sciences Society is an organization focused on spreading awareness about the importance of Life Sciences to Scarsdale. I built their web presence in NextJS with Notion as the CMS for the articles.</p>
+            </div>
+            <img class={styles.sideimage} src="/slss.png"/>
+        </div>
+    </div>
+</Layout>

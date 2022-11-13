@@ -1,0 +1,134 @@
+---
+import Layout from '../layouts/Layout.astro';
+import styles from "../styles/Home.module.css";
+
+---
+
+
+
+<Layout>
+    <div class={styles.mainsect} id="maincontent">
+        <div class={styles.filmsect} id="film">
+            <h1 class={styles.filmheader}>Videos</h1>
+            <p class={styles.filmmain} id="filmmain">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a class="nolink" href="/film">
+				<p class={styles.filmmore} id="filmmore">Learn More -></p>
+			</a>
+        </div>
+        <div class={styles.programmingsect} id="programming">
+            <h1 class={styles.programmingheader}>Programming</h1>
+            <p class={styles.programmingmain} id="programmingmain">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a class="nolink" href="/programming">
+			<p class={styles.programmingmore} id="programmingmore">Learn More -></p>
+			</a>
+        </div>
+        <div class={styles.othersect} id="other">
+            <h1 class={styles.otherheader}>Other</h1>
+            <p class={styles.othermain} id="othermain">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a class="nolink" href="/other">
+				<p class={styles.othermore} id="othermore">Learn More -></p>
+			</a>
+        </div>
+    </div>
+</Layout>
+
+<script>
+    let main = document.getElementById("maincontent")
+    let film = document.getElementById("film")
+    let programming = document.getElementById("programming")
+    let other = document.getElementById("other") 
+
+    let filmmain = document.getElementById("filmmain") 
+    let programmingmain = document.getElementById("programmingmain")
+    let othermain = document.getElementById("othermain")
+
+    let filmmore = document.getElementById("filmmore") 
+    let programmingmore = document.getElementById("programmingmore")
+    let othermore = document.getElementById("othermore") 
+
+	if (window.innerWidth -15 > 900) {
+		film?.addEventListener("mouseover", () => {
+			main.style.gridTemplateColumns = "58% 20% 20%";
+			film.style.filter = "grayscale(0%)";
+			other.style.filter = "grayscale(100%)";
+			programming.style.filter = "grayscale(100%)";
+	
+			filmmain.style.opacity = "1";
+			programmingmain.style.opacity = "0";
+			othermain.style.opacity = "0";
+	
+			filmmore.style.opacity = "1";
+			programmingmore.style.opacity = "0";
+			othermore.style.opacity = "0";
+	
+			console.log('film');
+		})
+	
+		film?.addEventListener("mouseleave", () => {
+			main.style.gridTemplateColumns = "32.8% 32.8% 32.8%"
+	
+			film.style.filter = "grayscale(100%)"
+	
+			filmmain.style.opacity = "0"
+	
+			filmmore.style.opacity = "0"
+		})
+	
+		programming?.addEventListener("mouseover", () => {
+			main.style.gridTemplateColumns = "20% 58% 20%";
+			programming.style.filter = "grayscale(0%)";
+			other.style.filter = "grayscale(100%)";
+			film.style.filter = "grayscale(100%)"
+	
+			programmingmain.style.opacity = "1";
+			filmmain.style.opacity = "0";
+			othermain.style.opacity = "0";
+	
+			programmingmore.style.opacity = "1";
+			filmmore.style.opacity = "0";
+			othermore.style.opacity = "0";
+	
+			console.log("programming");
+		})
+	
+		programming?.addEventListener("mouseleave", () => {
+			main.style.gridTemplateColumns = "32.8% 32.8% 32.8%"
+	
+			programming.style.filter = "grayscale(100%)"
+	
+			programmingmain.style.opacity = "0"
+	
+			programmingmore.style.opacity = "0"
+		})
+	
+		other?.addEventListener("mouseover", () => {
+			main.style.gridTemplateColumns = "20% 20% 58%";
+	
+			other.style.filter = "grayscale(0%)";
+			programming.style.filter = "grayscale(100%)";
+			film.style.filter = "grayscale(100%)";
+	
+			othermain.style.opacity = "1";
+			filmmain.style.opacity = "0";
+			programmingmain.style.opacity = "0";
+	
+			othermore.style.opacity = "1";
+			filmmore.style.opacity = "0";
+			programmingmore.style.opacity = "0";
+	
+			console.log("other")
+		})
+	
+		other?.addEventListener("mouseleave", () => {
+			main.style.gridTemplateColumns = "32.8% 32.8% 32.8%"
+	
+			other.style.filter = "grayscale(100%)"
+	
+			othermain.style.opacity = "0"
+	
+			othermore.style.opacity = "0"
+		})
+	}
+
+
+</script>

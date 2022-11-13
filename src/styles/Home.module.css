@@ -1,0 +1,85 @@
+.mainsect {
+    display: grid;
+    grid-template-columns: 32.8% 32.8% 32.8%;
+    gap: .6rem;
+    height: 85vh;
+    color: white;
+
+    transition: all 250ms ease;
+}
+
+.filmsect {
+    background-image: url("https://www.aaronanidjar.com/_next/image?url=%2Ficeland%2Ficelandfinal-35.jpg&w=1200&q=100");
+    filter: grayscale(100%);
+    transition: all 500ms ease;
+}
+
+.filmsect:hover > .mainsect {
+    grid-template-columns: 60% 20% 20%; 
+}
+
+.programmingsect {
+    background-image: url("https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    filter: grayscale(100%);
+    
+    transition: all 500ms ease;
+}
+
+.othersect {
+    background-image: url("https://www.aaronanidjar.com/_next/image?url=%2Ficeland%2Ficelandfinal-4.jpg&w=1200&q=100");
+    filter: grayscale(100%);
+    
+    transition: all 500ms ease;
+}
+
+
+.filmheader, .programmingheader, .otherheader {
+    margin-left: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    font-family: "Gemunu Libre";
+    font-size: 3rem;
+    
+}
+
+.filmmain, .programmingmain, .othermain {
+    opacity: 0;
+    max-width: 100%;
+    font-family: "Montserrat";
+    padding: 1rem;
+    line-height: 1.5;
+    margin: .1rem 1rem;
+    transition: opacity 200ms ease;
+    font-weight: 600;
+}
+
+.filmmain, .othermain {
+    color: black;
+}
+
+.filmmore, .programmingmore, .othermore {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.filmmore:hover, .programmingmore:hover, .othermore:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .mainsect {
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%; 
+    }
+
+    .filmmore, .programmingmore, .othermore {
+        opacity: 1;
+    }
+
+    .filmsect {
+        background-image: url("https://www.aaronanidjar.com/_next/image?url=%2Ficeland%2Ficelandfinal-21.jpg&w=1200&q=75");
+    }
+}

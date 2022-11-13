@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import styles from '../styles/Film.module.css'
+---
+
+
+<Layout>
+    <div class={styles.videocontainer}>
+        <div class={styles.individualvideo}>
+        <iframe class={styles.video} width={560} height={315} src="https://www.youtube.com/embed/yAPgEoZibNI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <h2>China</h2>
+        <p class={styles.videodescription}>Investigative piece on China&apos;s lending around the world.</p>
+        </div>
+        <div class={styles.individualvideo}>
+        <iframe class={styles.video} width={560} height={315} src="https://www.youtube.com/embed/3O6hal7pzaI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <h2>Iceland</h2>
+        <p class={styles.videodescription}>An investigative piece about Iceland&apos;s economy and why the nation is so rich.</p>
+        </div>
+
+        <div class={styles.individualvideo}>
+        <iframe class={styles.video} width={560} height={315} src="https://www.youtube.com/embed/rwTQnE9bS3E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <h2>Mount Rainier</h2>
+        <p>A longer piece on a hiking trip to Mount Ranier.</p>
+        </div>
+
+        <div class={styles.individualvideo}> 
+        <iframe class={styles.video} width={560} height={315} src="https://www.youtube.com/embed/0ZMsKeh6abs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <h2>Grand Teton</h2>
+        <p>A short piece showing Grand Teton.</p>
+        </div>
+
+        <div class={styles.individualvideo}>
+        <iframe class={styles.video} width={560} height={315} src="https://www.youtube.com/embed/Mh-b4LC54ik" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <h2>Yellowstone</h2>
+        <p>A short piece showing Yellowstone.</p>
+        </div>   
+    </div>
+</Layout>

@@ -80,8 +80,4 @@
     .filmmore, .programmingmore, .othermore {
         opacity: 1;
     }
-
-    .filmsect {
-        background-image: url("https://www.aaronanidjar.com/_next/image?url=%2Ficeland%2Ficelandfinal-21.jpg&w=1200&q=75");
-    }
 }

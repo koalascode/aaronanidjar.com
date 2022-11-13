@@ -4,6 +4,7 @@
     gap: .6rem;
     height: 85vh;
     color: white;
+    margin-top: 2rem;
 
     transition: all 250ms ease;
 }

@@ -50,7 +50,7 @@
 
 @media (max-width: 520px) {
     .main {
-        width: 100vw;
+        width: 92vw;
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
@@ -60,13 +60,17 @@
         display: none;
     }
 
+    .linkscontainer {
+        gap: 1rem;
+    }
+
     .header {
         margin: 0;
         padding: 0;
         margin-top: 1rem;
         margin-bottom: -2.5rem;
         padding-bottom: 1rem;
-        margin-left: 8rem;
+        margin-left: 6.5rem;
     }
 
     .linkscontainer {

@@ -9,7 +9,8 @@
 }
 
 .filmsect {
-    background-image: url("https://www.aaronanidjar.com/_next/image?url=%2Ficeland%2Ficelandfinal-35.jpg&w=1200&q=100");
+    background-image: url("/public/icelandfinal-35.jpg");
+    background-size: 100vw;
     filter: grayscale(100%);
     transition: all 500ms ease;
 }
@@ -26,7 +27,8 @@
 }
 
 .othersect {
-    background-image: url("https://www.aaronanidjar.com/_next/image?url=%2Ficeland%2Ficelandfinal-4.jpg&w=1200&q=100");
+    background-image: url("/public/icelandfinal-4.jpg");
+    background-size: 100vw;
     filter: grayscale(100%);
     
     transition: all 500ms ease;

@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import styles from '../../styles/PhotoSite.module.css'
+
+const { page } = Astro.props
+
+console.log(page)
+
+export function getStaticPaths() {
+  return [
+    {params: {slug: 'hawaii'}},
+    {params: {slug: 'iceland'}},
+    {params: {slug: 'cr'}},
+    {params: {slug: 'utah'}},
+    {params: {slug: 'assateague'}},
+    {params: {slug: 'acadia'}},
+  ];
+}
+
+let { slug } = Astro.params;
+
+slug == "cr" ? slug = "costa rica" : null;
+
+const urls = {"hawaii": "hawaiibestphotos", "iceland": "icelandfinal-", "costa rica": "crfinal-", "utah": "arizonafinal-", "assateague": "assateaguefinal-", "acadia": "acadiafinal-"}
+const lengths = {"hawaii": 8, "iceland": 56, "costa rica": 19, "utah": 53, "assateague": 19, "acadia": 37}
+
+const imgurls = []
+
+for (let i = 1; i < lengths[slug]; i++) {
+    imgurls.push("https://aaronanidjar.s3.amazonaws.com/" + slug + "/" + urls[slug] + i + ".jpg");        
+}
+
+---
+
+<Layout>
+    <div class={styles.textdiv}>
+        <h1 class={styles.header}>{slug.toUpperCase()}</h1>
+    </div>
+    <div class={styles.imgscontainer}>
+        {imgurls.map(url => <img class={styles.imgs} src={url} />)}
+    </div>
+    
+</Layout>

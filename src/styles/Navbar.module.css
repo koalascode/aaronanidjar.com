@@ -1,16 +1,18 @@
 .container {
-    width: 95vw;
+    width: 100vw;
     position: fixed;
     background-color: #151515;
     margin-top: -1rem;
+    padding-bottom: 0.25rem;
+    z-index: 100;
 }
 
 
 .main {
     display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 0;
+    transform: translateX(-4rem);
 }
 
 
@@ -49,11 +51,18 @@
 
 
 @media (max-width: 520px) {
+    .container {
+        padding-bottom: .5rem;
+        width: 105%;
+        margin-left: -1rem;
+    }
+
     .main {
-        width: 92vw;
+        width: 90vw;
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
+        transform: none;
     }
 
     .contactbutton {
@@ -75,5 +84,11 @@
 
     .linkscontainer {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        transform: none
     }
 }

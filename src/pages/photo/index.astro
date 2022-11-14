@@ -1,0 +1,49 @@
+---
+
+import Layout from "../../layouts/Layout.astro";
+import styles from '../../styles/Photos.module.css'
+
+---
+
+<Layout>
+    <div class={styles.container}>
+        <div class={styles.photocontainer}>
+            <a href="/photo/hawaii" >
+            <div class={styles.indivcontainer}>
+                <img src="/hawaiibestphotos4.jpg" class={styles.displayimg} width={600} height={400}/>
+                <h1 class={styles.headtext}>Hawaii</h1>
+            </div>
+            </a>
+            <a href="/photo/iceland" >
+            <div class={styles.indivcontainer}>
+                <img src="/icelandfinal-6.jpg" class={styles.displayimg} width={600} height={400}/>
+                <h1 class={styles.headtext}>Iceland</h1>
+            </div>
+            </a>
+            <a href="/photo/cr" >
+            <div class={styles.indivcontainer}>
+                <img src="/crfinal-13.jpg" class={styles.displayimg} width={600} height={400}/>
+                <h1 class={styles.headtext}>Costa Rica</h1>
+            </div>
+            </a>
+            <a href="/photo/utah" >
+            <div class={styles.indivcontainer}>
+                <img src="/arizonafinal-16.jpg" class={styles.displayimg} width={600} height={400}/>
+                <h1 class={styles.headtext}>Utah</h1>
+            </div>
+            </a>
+            <a href="/photo/assateague" >
+            <div class={styles.indivcontainer}>
+                <img src="/assateaguefinal-14.jpg" class={styles.displayimg} width={600} height={400}/>
+                <h1 class={styles.headtext}>Assateague</h1>
+            </div>
+            </a>
+            <a href="/photo/acadia" >
+            <div class={styles.indivcontainer}>
+                <img src="/acadiafinal-12.jpg" class={styles.displayimg} width={600} height={400}/>
+                <h1 class={styles.headtext}>Acadia</h1>
+            </div>
+            </a>
+        </div>
+    </div>
+</Layout>

@@ -12,6 +12,7 @@
 .filmsect {
     background-image: url("/icelandfinal-35.jpg");
     background-size: 100vw;
+    background-repeat: no-repeat;
     filter: grayscale(100%);
     transition: all 800ms ease;
 }
@@ -52,7 +53,8 @@
     padding: 1rem;
     line-height: 1.5;
     margin: .1rem 1rem;
-    transition: opacity 200ms ease;
+    transition-delay: 1s;
+    transition: opacity 1s ease;
     font-weight: 600;
 }
 

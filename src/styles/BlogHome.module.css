@@ -47,6 +47,11 @@
 
     .textmain {
         width: 90%;
+        margin: 0 auto;
+    }
+
+    .header {
+        text-align: center;
     }
 
     .coverimg {

@@ -60,7 +60,7 @@
     .main {
         width: 90vw;
         flex-wrap: wrap;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         transform: none;
     }
@@ -79,7 +79,7 @@
         margin-top: 1rem;
         margin-bottom: -2.5rem;
         padding-bottom: 1rem;
-        margin-left: 6.5rem;
+        margin-left: 1rem;
     }
 
     .linkscontainer {
@@ -91,4 +91,5 @@
     .main {
         transform: none
     }
+
 }

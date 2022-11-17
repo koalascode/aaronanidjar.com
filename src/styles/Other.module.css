@@ -1,0 +1,42 @@
+.container {
+    margin-top: 2rem;
+}
+
+.buttoncontainer {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button {
+    height: 50vh;
+    width: 100%;
+    background: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    font-family: "Rubik";
+    font-size: 2rem;
+
+
+    transition: border 500ms ease;
+}
+
+
+.button:hover {
+    border: 1px solid rgb(37, 155, 219);
+}
+
+@media (max-width: 800px) {
+    .buttoncontainer {
+        grid-template-columns: 90%;
+        grid-template-rows: 40% 40%;
+        gap: 4rem;
+    }
+
+    .button {
+        height: 40vh;
+
+    }
+}

@@ -3,16 +3,15 @@
     grid-template-columns: 32.8% 32.8% 32.8%;
     gap: .6rem;
     height: 85vh;
-    color: white;
 
-    transition: all 625ms ease;
+    transition: grid-template-columns 625ms ease;
     transition-delay: 250ms;    
 }
 
 .filmsect {
     background-image: url("/icelandfinal-35.jpg");
     background-size: 100vw;
-    background-repeat: no-repeat;
+    background-size: cover;
     filter: grayscale(100%);
     transition: all 800ms ease;
 }
@@ -24,7 +23,8 @@
 .programmingsect {
     background-image: url("https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
     filter: grayscale(100%);
-    
+    background-repeat: no-repeat;
+    background-color: black; 
     transition: all 800ms ease;
 }
 
@@ -32,7 +32,8 @@
     background-image: url("/icelandfinal-4.jpg");
     background-size: 100vw;
     filter: grayscale(100%);
-    
+    background-size: cover;
+    background-color: black;
     transition: all 800ms ease;
 }
 

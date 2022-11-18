@@ -23,6 +23,7 @@
 .programmingsect {
     background-image: url("https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
     filter: grayscale(100%);
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black; 
     transition: all 800ms ease;

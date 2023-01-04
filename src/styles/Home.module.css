@@ -81,7 +81,7 @@
 @media (max-width: 900px) {
     .mainsect {
         grid-template-columns: 100%;
-        grid-template-rows: 33% 33% 33%; 
+        grid-template-rows: 50% 50%; 
         margin-top: 2rem;
     }
 
@@ -91,5 +91,13 @@
 
     .filmmore, .programmingmore, .othermore {
         opacity: 1;
+        position: relative;
+        width: 30%;
+        bottom: 1rem;
+    }
+
+    .filmheader, .programmingheader, .otherheader {
+        margin-left: 1rem;
+        position: relative;
     }
 }

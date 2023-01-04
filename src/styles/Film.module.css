@@ -1,26 +1,45 @@
-
-
-.video {
-    max-width: 100%;
-    max-height: 100%;
+.videotest {
+    width: 40%;
+    height: 30vh;
+    z-index: 1;
 }
 
-
-
-
-.videocontainer {
+.indiv {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
+    justify-content: space-between;
+    margin: 0% 10%;
+    margin-bottom: 20%;
     margin-top: 2rem;
 }
 
+.rightsidetext {
+    width: 50%;
+    text-align: center;
+}
+
+.line {
+    border-left: 1px solid;
+    height: 100vh;
+    position: absolute;
+    margin-left: 5rem;
+    z-index: 0;
+}
+
 @media (max-width: 500px) {
-    .individualvideo {
-        max-width: 85%;
-        
+    .indiv {
+        flex-wrap: wrap;
+    }
+
+    .videotest {
+        width: 95%;
+        height: 20vh;
+    }
+
+    .rightsidetext {
+        width: 95%;
+    }
+
+    .line {
+        display: none;
     }
 }

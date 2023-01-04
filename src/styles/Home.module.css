@@ -1,6 +1,6 @@
 .mainsect {
     display: grid;
-    grid-template-columns: 32.8% 32.8% 32.8%;
+    grid-template-columns: 50% 50%;
     gap: .6rem;
     height: 85vh;
 
@@ -14,10 +14,6 @@
     background-size: cover;
     filter: grayscale(100%);
     transition: all 800ms ease;
-}
-
-.filmsect:hover > .mainsect {
-    grid-template-columns: 60% 20% 20%; 
 }
 
 .programmingsect {
@@ -63,12 +59,19 @@
     color: black;
 }
 
+.filmmore, .programmingmore {
+    color: black;
+}
+
 .filmmore, .programmingmore, .othermore {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     bottom: 0;
     margin-left: 1rem;
     cursor: pointer;
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
 }
 
 .filmmore:hover, .programmingmore:hover, .othermore:hover {

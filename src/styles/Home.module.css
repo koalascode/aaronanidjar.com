@@ -90,10 +90,13 @@
     }
 
     .filmmore, .programmingmore, .othermore {
-        opacity: 1;
-        position: relative;
-        width: 30%;
-        bottom: 1rem;
+        position: absolute;
+        bottom: none;
+        margin-left: 1rem;
+        cursor: pointer;
+        background-color: white;
+        padding: none;
+        border-radius: 5px;
     }
 
     .filmheader, .programmingheader, .otherheader {

@@ -1,0 +1,60 @@
+
+
+
+.container {
+    margin-top: 2rem;
+}
+
+.articlediv {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.coverimg {
+    min-width: 22rem;
+    max-width: 30%;
+
+    border-radius: 10px;
+}
+
+.textmain {
+    width: 50%;
+}
+
+.readmorelink {
+    background: none;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 500ms ease;
+}
+
+.readmorelink:hover {
+    border: 1px solid rgb(28, 184, 236);
+}
+
+
+@media (max-width: 700px) {
+    .articlediv {
+        flex-wrap: wrap;
+    }
+
+    .textmain {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .coverimg {
+
+    };
+}

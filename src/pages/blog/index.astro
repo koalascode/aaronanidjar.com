@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import styles from '../../styles/BlogHome.module.css'
+
+const posts = await Astro.glob('../../articles/*.md');
+
+posts.sort((a, b) => new Date(b.frontmatter.datemade) - new Date(a.frontmatter.datemade))
+---
+
+<Layout>
+    <div class={styles.container}>
+        <div class={styles.articlescontainer}>
+            {posts.map(post => (
+                <div class={styles.articlediv}>
+                    {post.frontmatter.coverimg && <img src={post.frontmatter.coverimg} class={styles.coverimg} />}
+                    <div class={styles.textmain}>
+                        <h1>{post.frontmatter.title}</h1>
+                        <p>{post.frontmatter.date}</p>
+                        <p class={styles.articleexerpt}>{post.frontmatter.excerpt}</p>
+                        <a href={`/blog/${post.frontmatter.slug}`}>
+                            <button class={styles.readmorelink}>Read More</button>
+                        </a>
+                    </div>
+                </div>
+            ))}
+        </div>
+
+
+
+    </div>
+</Layout>

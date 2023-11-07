@@ -1,0 +1,81 @@
+.container {
+    margin-top: 1rem;
+}
+
+.instruction {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.photocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    font-family: "Inter";
+}
+
+.image {
+    max-width: 40%;
+    height: auto;
+    /*border-radius: 10px;*/
+}
+
+.indivcontainer {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.displayimg {
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+
+.displayimg:hover {
+    opacity: 0.5;
+}
+
+.headtext {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.indivcontainer:hover > h1 {
+    opacity: 1;
+}
+
+
+@media (max-width: 500px) {
+    .photocontainer {
+        max-width: 95vw;
+    }
+
+    .image {
+        max-width: 90% !important;
+        height: auto;
+    }
+
+    .displayimg {
+        opacity: 0.6;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .headtext {
+        opacity: 1;
+    }
+}

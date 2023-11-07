@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+import styles from '../styles/Film.module.css';
+
+const videos = [
+    {
+        url: "https://www.youtube.com/embed/SsuSLzBS9rg?si=hHHs54o7t01wadrS",
+        date: "9-29-23",
+        title: "Grupo Medanos Corporate Film - English Version",
+        description: "This was my first corporate film that I produced. It was shot and then edited throughout the Summer of 2023, telling the story of a family owned farm in Argentina."
+    },
+    {
+        url: "https://player.vimeo.com/video/789489204?h=82918ba221",
+        date: "1-15-23",
+        title: "Alexei Sinyavin Mini-Documentary",
+        description: "I've long admired the documentary format, especially mini-documentaries, since they are able to quickly tell a story about a person / event in a concise yet entertaining and captivating way. I wanted to try my hand at the format, so I started a series about exceptional people that I know. This was the first installment."
+    },
+    {
+        url: "https://player.vimeo.com/video/803672268?h=18177b759e",
+        date: "7-26-22",
+        title: "China",
+        description: "A piece on China's lending paterns and why the nation has been spending such large amounts in recent years. This was really my first forte into doing research and large amounts of editing for a investigative video."
+    },
+    {
+        url: "https://www.youtube.com/embed/3O6hal7pzaI",
+        date: "4-17-22",
+        title: "Iceland",
+        description: "After spending a long time making travel videos, I wanted to be able to incorperate the footage that I had from the trips into a video with more substance."
+    },
+    {
+        url: "https://www.youtube.com/embed/rwTQnE9bS3E",
+        date: "7-26-21",
+        title: "Mount Rainier",
+        description: "After spending a long time trying to make better and better short trip videos from each trip or weekend hike, I decided that making a longer video would allow me to include more into the video, it was the start of longer form videos."
+    },
+    {
+        url: "https://www.youtube.com/embed/Mh-b4LC54ik",
+        date: "9-22-20",
+        title: "Yellowstone",
+        description: "One of many videos I made about a trip with my family. Most of these videos were around 3 minutes long with medium pacing."
+    },
+    {
+        url: "https://www.youtube.com/embed/o88foRgk5zA",
+        date: "7-4-18",
+        title: "Yosemite",
+        description: "My earliest travel videos were much shorter however, they spanned around 30s - 1min 30s. This is one from a trip to Yosemite in 2018."
+    },
+    {
+        url: "https://www.youtube.com/embed/WLKFYhePY7Y",
+        date: "5-16-17",
+        title: "Helping a Glued Bird",
+        description: "On a bike ride, my family found a bird glue to a mouse trap at my elementary school so I made this video documenting our process of helping the bird. This was one of my earliest videos."
+    }, 
+    {
+        url: "https://www.youtube.com/embed/7UT43jIEiaQ",
+        date: "11-12-16",
+        title: "My First Video",
+        description: "Around this time I would make videos for any event, a weekend hike, a birthday party, halloween - whatever it was, I would make a video. Making so many videos (over 200 at this point) helped me improve quickly."
+    }, 
+    
+]
+
+
+---
+
+<Layout>
+    <div class={styles.vidcontainer}>
+       <h1 class={styles.header}>Milestones:</h1> 
+       <p class={styles.description}>A selection of some of the videos I have made which were the most crucial to my development as a filmaker.</p>
+       <div class={styles.allvidsdiv}>
+        <p class={styles.allvidstxt}>All Videos: </p>
+        <a target="_blank" rel="noopener" href="https://www.youtube.com/@aaronanidjar">
+            <img class={styles.ytimg} src="./ytlogo.png"/>
+        </a>
+       </div>
+        {videos.map(x =>
+        <div class={styles.indiv}>
+            <div class={styles.line}></div>
+            <iframe class={styles.videotest} src={x.url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <div class={styles.rightsidetext}>
+                <p>{x.date}</p>
+                <h1>{x.title}</h1>
+                <p>{x.description}</p>
+            </div>
+        </div>
+        )}
+    </div>
+</Layout>

@@ -1,0 +1,69 @@
+.container {
+    margin-top: 1rem;
+}
+
+
+.maincontent {
+    max-width: 55%;
+    min-width: 20rem;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+
+.coverimg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-family: "Inter";
+}
+
+
+p {
+    font-family: "Open Sans";
+    line-height: 1.5;
+}
+
+.mainarticle a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.mainarticle a:hover {
+    text-decoration: underline;
+}
+
+.mainarticle img {
+    max-width: 100%;
+}
+
+.mainarticle code {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+blockquote {
+    border-left: 1px solid grey;
+    margin-left: 0;
+}
+
+blockquote p {
+    margin-left: 1.5rem;
+}
+
+.toparticle {
+    border-bottom: 1px solid grey;
+}
+
+
+iframe {
+    max-width: 100%;
+}

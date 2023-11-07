@@ -1,0 +1,41 @@
+.imgscontainer {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.imgs {
+    max-width: 100%;
+    height: auto;
+    max-height: 90vh;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 2.75rem;
+}
+
+.description {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .imgscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .textdiv {
+        margin-top: 2rem
+    }
+
+    .imgs {
+        max-width: 90%;
+    }
+}

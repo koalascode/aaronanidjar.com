@@ -1,0 +1,97 @@
+.mainsect {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: .6rem;
+    height: 85vh;
+    transition: grid-template-columns 625ms ease;
+    transition-delay: 250ms;    
+}
+
+.filmsect {
+    background-image: url("/icelandfinal-35.jpg");
+    background-size: 100vw;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: all 800ms ease;
+}
+
+.programmingsect {
+    background-image: url("https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    filter: grayscale(100%);
+    background-size: 60vw;
+    background-color: black; 
+    transition: all 800ms ease;
+}
+
+
+.filmheader, .programmingheader{
+    margin-left: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    font-family: "Gemunu Libre";
+    font-size: 3rem;
+    
+}
+
+.filmmain, .programmingmain {
+    opacity: 0;
+    max-width: 100%;
+    font-family: "Montserrat";
+    padding: 1rem;
+    line-height: 1.5;
+    margin: .1rem 1rem;
+    transition-delay: 1s;
+    transition: opacity 1s ease;
+    font-weight: 600;
+}
+
+.filmmain {
+    color: black;
+}
+
+.filmmore, .programmingmore {
+    color: black;
+}
+
+.filmmore, .programmingmore {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+
+.filmmore:hover, .programmingmore:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .mainsect {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%; 
+        margin-top: 2rem;
+    }
+
+    .programmingsect {
+        background-size: 100vw;
+    }
+
+    .filmmore, .programmingmore {
+        position: absolute;
+        bottom: none;
+        margin-left: 1rem;
+        cursor: pointer;
+        background-color: white;
+        padding: none;
+        border-radius: 5px;
+        z-index: 99;
+    }
+
+    .filmheader, .programmingheader {
+        margin-left: 1rem;
+        position: relative;
+    }
+}

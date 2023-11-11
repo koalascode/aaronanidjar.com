@@ -7,19 +7,13 @@ import styles from "../styles/Home.module.css";
 
 <Layout>
     <div class={styles.mainsect} id="maincontent">
-        <div class={styles.filmsect} id="film">
+        <a href="/film" class={styles.filmsect} id="film">
             <h1 class={styles.filmheader}>Videos</h1>
             <p class={styles.filmmain} id="filmmain">I have been filmmaking for 5 years now and have been recently enamored with investigative journalism. More videos about a variety of subjects will be coming soon. Click below to see the vidoes on my YouTube channel.</p>
-			<a class="nolink" href="/film">
-				<p class={styles.filmmore} id="filmmore">Learn More -></p>
-			</a>
-        </div>
-        <div class={styles.programmingsect} id="programming">
+        </a>
+        <a href="/programming" class={styles.programmingsect} id="programming">
             <h1 class={styles.programmingheader}>Programming</h1>
             <p class={styles.programmingmain} id="programmingmain">I am a full stack web developer who is always trying to improve and learn new technologies. Most recently I learned Astro, the web framework that this site is built in. To learn more about what I am currently building check my GitHub and my blog.</p>
-			<a class="nolink" href="/programming">
-				<p class={styles.programmingmore} id="programmingmore">Learn More -></p>
-			</a>
-        </div>
+        </a>
     </div>
 </Layout>

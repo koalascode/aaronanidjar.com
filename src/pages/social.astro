@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import styles from "../styles/Social.module.css";
+---
+
+<Layout>
+    <br /><br />
+    <div class={styles.projs}>
+        <div class={styles.indivproj}>
+            <img class={styles.sideimg} src="https://cleanwestchester.s3.amazonaws.com/bi-weekly-clean-ups/clean-up-15/cleanup14-7.jpg">
+            <div class={styles.sidetxt}>
+                <a class={styles.headerlink} href="https://www.cleanwestchester.org/" target="_blank" rel="noopener noreferrer">
+                    <h1 class={styles.sectheader}>Clean Westchester</h1>
+                </a>
+                <p>I founded Clean Westchester with a friend in March 2022. We had seen how many environmental clubs there were near us that were not doing boots-on-the-ground work, instead opting for more theoretical talks and fundraisers. Noticing the amount of trash and litter in vital wildlife areas, I built the website from scratch, started the Instagram (spearheading the marketing effort), and wrangled together some people to start doing clean-ups. In the time since we have been holding consistent bi-weekly clean-ups, accumulating a significant member base, and with it picking up a substantial amount of trash from these crucial places.</p>
+                <a href="https://www.cleanwestchester.org/" target="_blank" rel="noopener noreferrer">
+                    <button class={styles.sitebtn}>Website</button>
+                </a>
+            </div>
+        </div>
+        <div class={styles.indivproj}>
+            <img class={styles.sideimg} src="/chessclubimg.jpg">
+            <div class={styles.sidetxt}>
+                <h1 class={styles.sectheader}>Chess Club</h1>
+                <p>As Vice President of Scarsdale High School's Chess Club I help facilitate out library chess programs for younger children and for the elderly, giving both communities a place to meet other people and learn more about chess.</p>
+                <a href="https://www.cleanwestchester.org/" target="_blank" rel="noopener noreferrer">
+                    <button class={styles.sitebtn}>Website</button>
+                </a>
+            </div>
+        </div>
+        <div class={styles.indivproj}>
+            <img class={styles.sideimg} src="/slssimg.jpg">
+            <div class={styles.sidetxt}>
+                <a class={styles.headerlink} href="https://www.scarsdalelifesciences.org/" target="_blank" rel="noopener noreferrer">
+                    <h1 class={styles.sectheader}>Scarsdale Life Sciences Society</h1>
+                </a>
+                <p>Last year I built a web presence for Scarsdale Life Sciences Society, a local organization. Unfortunately, before finishing the redesign, the organization disbanded. The website is still online, but the redesign and remake of the site was never completed.</p>
+                <a href="https://www.scarsdalelifesciences.org/" target="_blank" rel="noopener noreferrer">
+                    <button class={styles.sitebtn}>Website</button>
+                </a>
+            </div>
+        </div>
+        <h2 class={styles.inprogress}>In Progress</h2>
+        <div class={styles.indivproj}>
+            <img class={styles.sideimg} src="/programemos2.jpg">
+            <div class={styles.sidetxt} >
+                <a class={styles.headerlink} href="https://www.programemos.org/" target="_blank" rel="noopener noreferrer">
+                    <h1 class={styles.sectheader}>Programemos</h1>
+                </a>
+                <p>Programemos is a project I have been working on over the past year. It connects more educational resources in technology and programming to Latin American audiences, providing content in Spanish that is not usually available. In such an interconnected world, there are countless talented minds who do not have access to education in these areas, and are never able to realize their potential in these subjects. Programemos is an effort to create social media and article-based content in technology for these audiences.</p>
+                <a href="https://www.programemos.org/" target="_blank" rel="noopener noreferrer">
+                    <button class={styles.sitebtn}>Website</button>
+                </a>
+            </div>
+        </div> 
+    </div>
+</Layout>
